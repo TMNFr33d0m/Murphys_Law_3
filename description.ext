@@ -1,0 +1,84 @@
+OnLoadMission = "Murphy's Law Episode 3 - Digital Warfare";
+author = fr33d0m;
+onLoadName = Murphy's Law Episode 3;
+// this is the pic on load... change this...      loadScreen = "";
+class Header
+{
+	gameType = Coop;
+	minPlayers = 1;
+	maxPlayers = 5;
+};
+respawn = "NONE";
+disabledAI = 0;
+aikills = 1;
+#include "VAS\menu.hpp"
+
+class CfgFunctions
+{
+	#include "VAS\cfgfunctions.hpp"
+};
+
+class CfgSounds {
+	sounds[] = 	{intro, techtheme1, techtheme2, techtheme3, Alarm1, dead, briefing1, briefing2, remember, shit};
+
+	class intro{
+	name = "intro";
+	sound[] = {"\Sounds\intro.ogg", 0.6, 1.0};
+	titles[] = {};
+	};
+
+	class techtheme1{
+	name = "techtheme1";
+	sound[] = {"\Sounds\techtheme1.ogg", 0.5, 1.0};
+	titles[] = {};
+	};
+
+	class alarm1{
+	name = "Lab Alarm";
+	sound[] = {"\Sounds\Alarm1.ogg", 0.9, 1.0};
+	titles[] = {};
+	};
+
+	class dead{
+	name = "dead";
+	sound[] = {"\Sounds\dead.ogg", 0.9, 1.0};
+	titles[] = {};
+	};
+
+	class techtheme2{
+	name = "techtheme2";
+	sound[] = {"\Sounds\techtheme2.ogg", 0.7, 1.0};
+	titles[] = {};
+	};
+
+	class techtheme3{
+	name = "techtheme3";
+	sound[] = {"\Sounds\techtheme3.ogg", 0.8, 1.0};
+	titles[] = {};
+	};
+
+	class briefing1{
+	name = "briefing1";
+	sound[] = {"\Sounds\briefing1.ogg", 0.8, 1.0};
+	titles[] = {};
+	};
+
+	class briefing2{
+	name = "briefing2";
+	sound[] = {"\Sounds\briefing2.ogg", 0.8, 1.0};
+	titles[] = {};
+	};
+
+	class remember{
+	name = "remember";
+	sound[] = {"\Sounds\remember.ogg", 0.8, 1.0};
+	titles[] = {};
+	};
+
+	class shit{
+	name = "shit";
+	sound[] = {"\Sounds\shit.ogg", 0.8, 1.0};
+	titles[] = {};
+	};
+
+};
